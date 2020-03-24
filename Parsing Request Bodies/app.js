@@ -21,8 +21,10 @@ const server = http.createServer((req, res) => {
         req.on('end', () =>{
             const parseBody = Buffer.concat(body).toString();
             console.log(parseBody);
+            const message = parseBody.split('=')[1];
+            fs.writeFile('message.txt', message);
         });
-        fs.writeFile('message.txt', 'DUMMY');
+        
         res.statusCode = 302;
         res.setHeader('Location', '/');
         return res.end();
