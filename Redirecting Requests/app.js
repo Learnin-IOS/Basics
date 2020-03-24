@@ -14,7 +14,7 @@ const server = http.createServer((req, res) => {
     }
     if (url === '/message' && method==='POST' ){
         fs.writeFile('message.txt', 'DUMMY');
-        res.StatusCode('302');
+        res.statusCode = 302;
         res.setHeader('Location', '/');
         return res.end();
         
