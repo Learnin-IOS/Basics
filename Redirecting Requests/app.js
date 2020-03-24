@@ -13,8 +13,12 @@ const server = http.createServer((req, res) => {
         return res.end();
     }
     if (url === '/message' && method==='POST' ){
-        fs.writeFile('message.txt');
+        fs.writeFile('message.txt', 'DUMMY');
+        res.statusCode('302');
+        res.setHeader('Location', '/');
+        return res.end();
         
+
     }
     //process.exit();
     res.setHeader('Content-Type', 'text/html');
