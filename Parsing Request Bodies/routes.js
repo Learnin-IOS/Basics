@@ -1,3 +1,4 @@
+const fs = require('fs');
 if (url ==='/'){
     res.write('<html>');
     res.write('<head><title>Enter Message</title></head>');
