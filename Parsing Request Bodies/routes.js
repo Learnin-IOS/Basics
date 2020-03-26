@@ -40,7 +40,10 @@ const requestHandler = (req, res) => {
 
 };
 
-module.exports={
-    handler: requestHandler,
-    someText: 'Some hard coded Text here'
-}; 
+// module.exports={
+//     handler: requestHandler,
+//     someText: 'Some hard coded Text here'
+// }; 
+
+module.exports.handler = requestHandler;
+module.exports.someText = 'Some hard coded text';
