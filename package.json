@@ -4,13 +4,14 @@
   "description": "Complete NodeJs Guide",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Learning-Node-Js/Basics.git"
   },
-  "author": "Le Bon B' Bauma",
+  "author": "Le Bon B Bauma",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/Learning-Node-Js/Basics/issues"
